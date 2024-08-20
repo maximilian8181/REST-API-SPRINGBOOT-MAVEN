@@ -202,3 +202,50 @@ Para ejecutar la aplicación, sigue estos pasos:
     "countryCode": "CN"
 }
 ```
+
+**PATCH /api/v1/users/{user_id}**
+
+* **Descripción:** Actualiza atributo de usuario asociado por un ID.
+* **Request:** PATCH http://localhost:8080/api/v1/users/369
+* **Body:**
+```json
+{
+    "name": "Josh"
+}
+```
+* **Response:**
+```json
+{
+    "id": 369,
+    "email": "wufudufu@email.com",
+    "name": "Josh",
+    "password": "75aaaecf714a8797fc8acc2df8e3bd51b88264dc",
+    "createdAt": "20-08-2024 22:22:38",
+    "addresses": {
+        "homeaddress": {
+            "id": 9,
+            "street": "Wacko Street",
+            "countryCode": "SP"
+        },
+        "workaddress": {
+            "id": 10,
+            "street": "Misery District 84",
+            "countryCode": "UK"
+        },
+        "spainaddress": {
+            "id": 12,
+            "street": "Centro 42",
+            "countryCode": "AR"
+        }
+    }
+}
+```
+
+**DELETE /api/v1/users/{user_id}**
+
+* **Descripción:** Elimina usuario asociado por un ID.
+* **Request:** DELETE http://localhost:8080/api/v1/users/369
+* **Response:**
+```json
+User deleted successfully
+```
