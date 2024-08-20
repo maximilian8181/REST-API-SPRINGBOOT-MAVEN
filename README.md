@@ -50,3 +50,60 @@ Para ejecutar la aplicación, sigue estos pasos:
 3. **Ejecutar la clase principal**: Una vez importado, localiza la clase `SpringbootAppApplication` dentro del proyecto. Esta clase contiene el método `main`, que es el punto de entrada de la aplicación.
 
 4. **Ejecutar la aplicación**: Haz clic derecho sobre la clase `SpringbootAppApplication` y selecciona la opción de "Run" o "Ejecutar". Esto iniciará la aplicación Spring Boot en tu entorno local.
+
+## API Endpoints
+
+### User Endpoints
+
+**GET /api/v1/users**
+
+* **Descripción:** Obtiene una lista de usuarios, ordenada por el atributo especificado.
+* **Request:** GET http://localhost:8080/api/v1/users?sortedBy=email
+* **Response:**
+```json
+[
+    {
+        "id": 124,
+        "email": "user1@mail.com",
+        "name": "user2",
+        "password": "1f8ac10f23c5b5bc1167bda84b833e5c057a77d2",
+        "createdAt": "20-08-2024 21:52:25",
+        "addresses": {
+            "workaddress": {
+                "id": 3,
+                "street": "Street No. 3",
+                "countryCode": "US"
+            },
+            "homeaddress": {
+                "id": 4,
+                "street": "Street No. 4",
+                "countryCode": "CA"
+            }
+        }
+    },
+    {
+        "id": 123,
+        "email": "user2@mail.com",
+        "name": "user1",
+        "password": "7c4a8d09ca3762af61e59520943dc26494f8941b",
+        "createdAt": "20-08-2024 21:52:25",
+        "addresses": {
+            "workaddress": {
+                "id": 1,
+                "street": "Street No. 1",
+                "countryCode": "UK"
+            },
+            "homeaddress": {
+                "id": 2,
+                "street": "Street No. 2",
+                "countryCode": "AU"
+            },
+            "mexicoaddress": {
+                "id": 5,
+                "street": "Del Carmen 26",
+                "countryCode": "MX"
+            }
+        }
+    }
+]
+```
