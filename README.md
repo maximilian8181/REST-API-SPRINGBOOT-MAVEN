@@ -255,3 +255,10 @@ User deleted successfully
 * **Spring Boot:** Framework principal utilizado para desarrollar la API.
 * **Maven:** Gestión de dependencias y construcción del proyecto.
 * **IntelliJ IDEA:** IDE utilizado para el desarrollo del proyecto.
+
+## Requisitos para Ejecutar la Aplicación
+
+Para poder ejecutar esta aplicación, es necesario cumplir con los siguientes requisitos:
+
+1. **Java Development Kit (JDK) 17**
+2. **IDE compatible con Maven**
