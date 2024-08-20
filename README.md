@@ -110,8 +110,8 @@ Para ejecutar la aplicación, sigue estos pasos:
 
 **GET /api/v1/users/{user_id}/addresses**
 
-* **Descripción:** Obtiene una lista de usuarios, ordenada por el atributo especificado.
-* **Request:** GET [http://localhost:8080/api/v1/users/123/addresses
+* **Descripción:** Obtiene una lista de direcciones asociadas al ID del usuario.
+* **Request:** GET http://localhost:8080/api/v1/users/123/addresses
 * **Response:**
 ```json
 [
@@ -131,4 +131,74 @@ Para ejecutar la aplicación, sigue estos pasos:
         "countryCode": "MX"
     }
 ]
+```
+
+**POST /api/v1/users**
+
+* **Descripción:** Agrega un nuevo usuario al array.
+* **Request:** POST http://localhost:8080/api/v1/users
+* **Body:**
+```json
+{
+    "id": 356,
+    "email": "user3@gmail.com",
+    "name": "Richie",
+    "password": "456789",
+    "createdAt": null,
+    "addresses": {
+        "workaddress": {
+            "id": 1,
+            "street": "Fascination Street",
+            "countryCode": "UK"
+        },
+        "homeaddress": {
+            "id": 2,
+            "street": "Pico Boulevard",
+            "countryCode": "US"
+        }
+    }
+}
+```
+* **Response:**
+```json
+{
+    "id": 356,
+    "email": "user3@gmail.com",
+    "name": "Richie",
+    "password": "456789",
+    "createdAt": null,
+    "addresses": {
+        "workaddress": {
+            "id": 1,
+            "street": "Fascination Street",
+            "countryCode": "UK"
+        },
+        "homeaddress": {
+            "id": 2,
+            "street": "Pico Boulevard",
+            "countryCode": "US"
+        }
+    }
+}
+```
+
+**PUT /api/v1/users/{user_id}/addresses/{address_id}**
+
+* **Descripción:** Actualiza una dirección asociada tanto al ID del usuario como al ID del domicilio.
+* **Request:** PUT http://localhost:8080/api/v1/users/356/addresses/1
+* **Body:**
+```json
+{
+    "id": 1,
+    "street": "Cuckoo Avenue",
+    "countryCode": "CN"
+}
+```
+* **Response:**
+```json
+{
+    "id": 1,
+    "street": "Cuckoo Avenue",
+    "countryCode": "CN"
+}
 ```
