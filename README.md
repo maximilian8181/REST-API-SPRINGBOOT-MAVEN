@@ -25,7 +25,7 @@ El proyecto está organizado en los siguientes paquetes:
 
 El proyecto utiliza las siguientes dependencias clave, especificadas en el archivo `pom.xml`:
 
-```
+```xml
 <dependencies>
     <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -249,3 +249,9 @@ Para ejecutar la aplicación, sigue estos pasos:
 ```json
 User deleted successfully
 ```
+
+## Herramientas y tecnologías
+
+* **Spring Boot:** Framework principal utilizado para desarrollar la API.
+* **Maven:** Gestión de dependencias y construcción del proyecto.
+* **IntelliJ IDEA:** IDE utilizado para el desarrollo del proyecto.
