@@ -55,7 +55,7 @@ Para ejecutar la aplicación, sigue estos pasos:
 
 ### User Endpoints
 
-**GET /api/v1/users**
+**GET /api/v1/users?sortedBy={attribute}**
 
 * **Descripción:** Obtiene una lista de usuarios, ordenada por el atributo especificado.
 * **Request:** GET http://localhost:8080/api/v1/users?sortedBy=email
@@ -104,6 +104,31 @@ Para ejecutar la aplicación, sigue estos pasos:
                 "countryCode": "MX"
             }
         }
+    }
+]
+```
+
+**GET /api/v1/users/{user_id}/addresses**
+
+* **Descripción:** Obtiene una lista de usuarios, ordenada por el atributo especificado.
+* **Request:** GET [http://localhost:8080/api/v1/users/123/addresses
+* **Response:**
+```json
+[
+    {
+        "id": 1,
+        "street": "Street No. 1",
+        "countryCode": "UK"
+    },
+    {
+        "id": 2,
+        "street": "Street No. 2",
+        "countryCode": "AU"
+    },
+    {
+        "id": 5,
+        "street": "Del Carmen 26",
+        "countryCode": "MX"
     }
 ]
 ```
