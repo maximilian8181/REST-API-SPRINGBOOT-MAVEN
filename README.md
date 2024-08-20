@@ -8,7 +8,7 @@ implementación de una API RESTful para la gestión de usuarios y sus direccione
 * **Creado por:** Maximiliano Salazar Rosales
 * **Fecha:** 20/08/2024
 * **Versión:** v1.0.0
-* **Tecnologías:** Java, Spring Boot, Maven, IntelliJ IDEA
+* **Tecnologías:** Java, Spring Boot, Maven, IntelliJ IDEA, Postman
 * **Objetivo:** Desarrollar una API que permita realizar operaciones CRUD sobre usuarios y direcciones, con cifrado de contraseñas y manejo de fechas de creación.
 
 ## Arquitectura del Proyecto
@@ -255,6 +255,7 @@ User deleted successfully
 * **Spring Boot:** Framework principal utilizado para desarrollar la API.
 * **Maven:** Gestión de dependencias y construcción del proyecto.
 * **IntelliJ IDEA:** IDE utilizado para el desarrollo del proyecto.
+* **Postman:** Prueba de endpoints
 
 ## Requisitos para Ejecutar la Aplicación
 
