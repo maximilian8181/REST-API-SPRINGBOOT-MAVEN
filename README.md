@@ -38,3 +38,15 @@ El proyecto utiliza las siguientes dependencias clave, especificadas en el archi
     </dependency>
 </dependencies>
 ```
+
+## Iniciar la Aplicación
+
+Para ejecutar la aplicación, sigue estos pasos:
+
+1. **Descargar el proyecto**: Descarga el archivo ZIP del proyecto desde el repositorio y descomprímelo en tu sistema local.
+
+2. **Importar el proyecto**: Abre tu IDE de preferencia, como IntelliJ IDEA o Eclipse, y utiliza la opción de importar proyectos Maven para cargar el proyecto en el entorno.
+
+3. **Ejecutar la clase principal**: Una vez importado, localiza la clase `SpringbootAppApplication` dentro del proyecto. Esta clase contiene el método `main`, que es el punto de entrada de la aplicación.
+
+4. **Ejecutar la aplicación**: Haz clic derecho sobre la clase `SpringbootAppApplication` y selecciona la opción de "Run" o "Ejecutar". Esto iniciará la aplicación Spring Boot en tu entorno local.
